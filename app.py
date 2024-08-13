@@ -23,7 +23,7 @@ def load_user(user_id):
 
 
 SECRET_KEY = os.getenv('SECRET_KEY')
-FACEIT_DATABASE_URL = os.getenv('faceit_database_url')
+FACEIT_DATABASE_URL = os.getenv('DATABASE_URL')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config["SQLALCHEMY_DATABASE_URI"] = FACEIT_DATABASE_URL
