@@ -8,7 +8,7 @@
 <body>
       <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="text-center">
-            <video src="{{requested_file.data}}" width="320" height="240" controls></video>
+            <video src="{{url_for('static', filename=requested_file.filename)}}" width="1000" height="1000" controls></video>
         </div>
     </div>
 </body>

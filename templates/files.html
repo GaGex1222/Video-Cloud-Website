@@ -36,7 +36,7 @@
         </form>
         <ul class="list-group">
             {% for file in files %}
-                <li class="list-group-item">{{file.filename}} <a href="{{url_for('download', file_id=file.id)}}">Download Video</a> <a href="{{url_for('preview', file_id=file.id)}}">Preview Video</a> <small class="fw-bold">Faceit Member : {{file.person}}</small></li>
+                <li class="list-group-item">{{file.filename}} <a href="{{url_for('download', file_id=file.id)}}">Download Video</a> <a href="{{url_for('preview', file_id=file.id)}}">Preview Video</a> <a href="{{url_for('delete', file_id=file.id)}}">Delete Video</a> <small class="fw-bold">Faceit Member : {{file.person}}</small></li>
             {% endfor %}
         </ul>
     </div>
